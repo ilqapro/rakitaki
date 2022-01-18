@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rakitaki - свежие раки</title>
+  <meta name="description" content="123">
+
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/fonts.css">
+  <link rel="stylesheet" href="./assets/libs/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./assets/libs/slick.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+  <header id="header">
+    <div class="header__top container">
+      <nav class="header__menu">
+        <ul>
+          <li class="header__menu-item">
+            <a href="#sales">
+              Акции
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#photos">
+              Галерея
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#alive">
+              Раки живые
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#boiled">
+              Раки вареные
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#company">
+              О компании
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#faq">
+              FAQ
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#shipping">
+              Оплата и доставка
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <hr class="header__top-line">
+      <div class="header__top-side">
+        <div class="header__top-shipping">
+          <p class="header__top-shipping__title">
+            Самовывоз:
+          </p>
+          <p class="header__top-shipping__content">
+            <img src="./media/shipping-info.svg" alt="">
+            М. Дубровка
+          </p>
+        </div>
+        <div class="header__top-social">
+          <a class="header__top-social__item" href="!#">
+            <img src="./media/telegram.svg" alt="">
+          </a>
+          <a class="header__top-social__item" href="!#">
+            <img src="./media/whatsapp.svg" alt="">
+          </a>
+          <a class="header__top-social__item" href="!#">
+            <img src="./media/viber.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom container">
+      <div class="header__bottom-buttons">
+        <a class="btn btn-white btn-border" href="#catalog">
+          Каталог
+        </a>
+        <button type="button" class="btn btn-red btn-border" data-open_popup="callback">
+          Экспресс заказ
+        </button>
+      </div>
+      <a class="header__bottom-logo" href="/">
+        <img src="./media/logo.png" alt="">
+      </a>
+      <div class="header__bottom-side">
+        <a class="header__bottom-phone" href="tel:+74958774942">
+          +7 (495) 877-49-42
+        </a>
+        <button type="button" class="header__bottom-callback btn" data-open_popup="callback">
+          Заказать звонок
+        </button>
+        <button type="button" class="header__bottom-cart">
+          <span class="header__bottom-cart__counter">
+            2
+          </span>
+          <img src="./media/cart.svg" alt="">
+        </button>
+        <button type="button" class="burger"></button>
+      </div>
+    </div>
+  </header>
+  <section id="main">
+    <div class="main__wrapper">
+      <div class="main__offer">
+        <div class="main__offer-inner">
+          <h1 class="title">
+            <span>Вареные и живые</span>
+            раки с доставкой
+            <br>по Москве и области
+          </h1>
+          <div class="main__offer-info">
+            <div class="main__offer-info__item">
+              <img src="./media/sale.png" alt="">
+              <p>
+                Цены на раки
+                <br>от 450 ₽/кг
+              </p>
+            </div>
+            <div class="main__offer-info__item">
+              <img src="./media/geo.png" alt="">
+              <p>
+                Доставка свежих
+                <br>раков за 1 час
+              </p>
+            </div>
+          </div>
+          <div class="offer_form">
+            <p class="offer_form-title subtitle">
+              Оставьте заявку, мы свяжемся с Вами через 1  минуту
+            </p>
+            <p class="offer_form-subtitle">
+              Подберем для Вас раков и быстро оформим заказ
+            </p>
+            <form class="offer_form-fields" action="!#" method="POST">
+              <div class="offer_form-choice">
+                <input id="product_type_01" type="radio" name="product_type" checked>
+                <label class="offer_form-choice__item" for="product_type_01">
+                  <div class="offer_form-choice__icon">
+                    <img src="./media/live-crayfish.png" alt="">
+                  </div>
+                  <p>
+                    Живые
+                  </p>
+                  <span class="tick"><img src="./media/tick.svg" alt=""></span>
+                </label>
+                <input id="product_type_02" type="radio" name="product_type">
+                <label class="offer_form-choice__item" for="product_type_02">
+                  <div class="offer_form-choice__icon">
+                    <img src="./media/boiled-crayfish.png" alt="">
+                  </div>
+                  <p>
+                    Вареные
+                  </p>
+                  <span class="tick"><img src="./media/tick.svg" alt=""></span>
+                </label>
+              </div>
+              <div class="offer_form-inputs">
+                <input type="text" name="name" class="input" placeholder="Имя">
+                <input type="text" name="phone" class="input" placeholder="Телефон">
+              </div>
+              <button class="btn btn-red btn-border" data-open_popup="callback">
+                Экспресс заказ
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="main__slider" data-slider_wrapper>
+        <div class="main__slider-inner">
+          <div class="main__slider-item">
+            <img src="./media/main-slider-01.png" alt="">
+          </div>
+          <div class="main__slider-item">
+            <img src="./media/main-slider-01.png" alt="">
+          </div>
+          <div class="main__slider-item">
+            <img src="./media/main-slider-01.png" alt="">
+          </div>
+          <div class="main__slider-item">
+            <img src="./media/main-slider-01.png" alt="">
+          </div>
+          <div class="main__slider-item">
+            <img src="./media/main-slider-01.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="products__info">
+    <div class="section-wrapper">
+      <div class="container">
+        <div class="products__info-wrapper">
+          <div class="products__info-item">
+            <div class="products__info-item__inner">
+              <div class="products__info-image">
+                <img src="./media/products-info-01.png" alt="">
+              </div>
+              <p class="products__info-text">
+                Все фракции (размеры) раков всегда доступны
+              </p>
+            </div>
+          </div>
+          <div class="products__info-item">
+            <div class="products__info-item__inner">
+              <div class="products__info-image">
+                <img src="./media/products-info-02.png" alt="">
+              </div>
+              <p class="products__info-text">
+                Продаем только свежие раки, соблюдаем СанПиН
+              </p>
+            </div>
+          </div>
+          <div class="products__info-item">
+            <div class="products__info-item__inner">
+              <div class="products__info-image">
+                <img src="./media/products-info-03.png" alt="">
+              </div>
+              <p class="products__info-text">
+                Оплата за раки производится после осмотра продукции
+              </p>
+              </div>
+          </div>
+          <div class="products__info-item">
+            <div class="products__info-item__inner">
+              <div class="products__info-image">
+                <img src="./media/products-info-04.png" alt="">
+              </div>
+              <p class="products__info-text">
+                Вареные раки доставляются в специальных термо портфелях
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="catalog">
+    <div class="container">
+      <div class="products" id="alive">
+        <h2 class="title">
+          <span>Живые</span> раки
+        </h2>
+        <div class="products__wrapper">
+          <div class="product-item">
+            <a class="product__image" href="!#">
+              <img src="./media/catalog__item-image.png" alt="">
+            </a>
+            <div class="product__info">
+              <a class="product__title" href="!#">
+                Раки Самые Мелкие
+                <span class="product__title-weight">
+                  (15-20 Гр.)
+                </span>
+              </a>
+              <div class="product__attrs">
+                <div class="product__attrs-item">
+                  <div class="product__attrs-image">
+                    <img src="./media/crayfish.svg" alt="">
+                  </div>
+                  <p class="product__attrs-text">
+                    40-50 шт/1 кг
+                  </p>
+                </div>
+              </div>
+              <div class="product__price">
+                <div class="product__price-icon">
+                  <img src="./media/price.svg" alt="">
+                </div>
+                <p class="product__price-new">
+                  450 ₽/КГ
+                </p>
+                <p class="product__price-old">
+                  1290  ₽/КГ
+                </p>
+              </div>
+              <div class="product__buttons">
+                <button type="button" class="btn btn-red express_order">
+                  <img src="./media/finger-print.svg" alt="">
+                  <span>Купить в 1 клик</span>
+                </button>
+                <button type="button" class="btn add_to_cart">
+                  <img src="./media/cart-item.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a class="product__image" href="!#">
+              <img src="./media/catalog__item-image.png" alt="">
+            </a>
+            <div class="product__info">
+              <a class="product__title" href="!#">
+                Раки Самые Мелкие
+                <span class="product__title-weight">
+                  (15-20 Гр.)
+                </span>
+              </a>
+              <div class="product__attrs">
+                <div class="product__attrs-item">
+                  <div class="product__attrs-image">
+                    <img src="./media/crayfish.svg" alt="">
+                  </div>
+                  <p class="product__attrs-text">
+                    40-50 шт/1 кг
+                  </p>
+                </div>
+              </div>
+              <div class="product__price">
+                <div class="product__price-icon">
+                  <img src="./media/price.svg" alt="">
+                </div>
+                <p class="product__price-new">
+                  450 ₽/КГ
+                </p>
+                <p class="product__price-old">
+                  1290  ₽/КГ
+                </p>
+              </div>
+              <div class="product__buttons">
+                <button type="button" class="btn btn-red express_order">
+                  <img src="./media/finger-print.svg" alt="">
+                  <span>Купить в 1 клик</span>
+                </button>
+                <button type="button" class="btn add_to_cart">
+                  <img src="./media/cart-item.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a class="product__image" href="!#">
+              <img src="./media/catalog__item-image.png" alt="">
+            </a>
+            <div class="product__info">
+              <a class="product__title" href="!#">
+                Раки Самые Мелкие
+                <span class="product__title-weight">
+                  (15-20 Гр.)
+                </span>
+              </a>
+              <div class="product__attrs">
+                <div class="product__attrs-item">
+                  <div class="product__attrs-image">
+                    <img src="./media/crayfish.svg" alt="">
+                  </div>
+                  <p class="product__attrs-text">
+                    40-50 шт/1 кг
+                  </p>
+                </div>
+              </div>
+              <div class="product__price">
+                <div class="product__price-icon">
+                  <img src="./media/price.svg" alt="">
+                </div>
+                <p class="product__price-new">
+                  450 ₽/КГ
+                </p>
+                <p class="product__price-old">
+                  1290  ₽/КГ
+                </p>
+              </div>
+              <div class="product__buttons">
+                <button type="button" class="btn btn-red express_order">
+                  <img src="./media/finger-print.svg" alt="">
+                  <span>Купить в 1 клик</span>
+                </button>
+                <button type="button" class="btn add_to_cart">
+                  <img src="./media/cart-item.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a class="product__image" href="!#">
+              <img src="./media/catalog__item-image.png" alt="">
+            </a>
+            <div class="product__info">
+              <a class="product__title" href="!#">
+                Раки Самые Мелкие
+                <span class="product__title-weight">
+                  (15-20 Гр.)
+                </span>
+              </a>
+              <div class="product__attrs">
+                <div class="product__attrs-item">
+                  <div class="product__attrs-image">
+                    <img src="./media/crayfish.svg" alt="">
+                  </div>
+                  <p class="product__attrs-text">
+                    40-50 шт/1 кг
+                  </p>
+                </div>
+              </div>
+              <div class="product__price">
+                <div class="product__price-icon">
+                  <img src="./media/price.svg" alt="">
+                </div>
+                <p class="product__price-new">
+                  450 ₽/КГ
+                </p>
+                <p class="product__price-old">
+                  1290  ₽/КГ
+                </p>
+              </div>
+              <div class="product__buttons">
+                <button type="button" class="btn btn-red express_order">
+                  <img src="./media/finger-print.svg" alt="">
+                  <span>Купить в 1 клик</span>
+                </button>
+                <button type="button" class="btn add_to_cart">
+                  <img src="./media/cart-item.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a class="product__image" href="!#">
+              <img src="./media/catalog__item-image.png" alt="">
+            </a>
+            <div class="product__info">
+              <a class="product__title" href="!#">
+                Раки Самые Мелкие
+                <span class="product__title-weight">
+                  (15-20 Гр.)
+                </span>
+              </a>
+              <div class="product__attrs">
+                <div class="product__attrs-item">
+                  <div class="product__attrs-image">
+                    <img src="./media/crayfish.svg" alt="">
+                  </div>
+                  <p class="product__attrs-text">
+                    40-50 шт/1 кг
+                  </p>
+                </div>
+              </div>
+              <div class="product__price">
+                <div class="product__price-icon">
+                  <img src="./media/price.svg" alt="">
+                </div>
+                <p class="product__price-new">
+                  450 ₽/КГ
+                </p>
+                <p class="product__price-old">
+                  1290  ₽/КГ
+                </p>
+              </div>
+              <div class="product__buttons">
+                <button type="button" class="btn btn-red express_order">
+                  <img src="./media/finger-print.svg" alt="">
+                  <span>Купить в 1 клик</span>
+                </button>
+                <button type="button" class="btn add_to_cart">
+                  <img src="./media/cart-item.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="products" id="boiled">
+        <h2 class="title">
+          <span>Вареные</span> раки
+        </h2>
+        <div class="products__wrapper">
+          <div class="product-item">
+            <a class="product__image" href="!#">
+              <img src="./media/catalog__item-image.png" alt="">
+            </a>
+            <div class="product__info">
+              <a class="product__title" href="!#">
+                Раки Самые Мелкие
+                <span class="product__title-weight">
+                  (15-20 Гр.)
+                </span>
+              </a>
+              <div class="product__attrs">
+                <div class="product__attrs-item">
+                  <div class="product__attrs-image">
+                    <img src="./media/crayfish.svg" alt="">
+                  </div>
+                  <p class="product__attrs-text">
+                    40-50 шт/1 кг
+                  </p>
+                </div>
+              </div>
+              <div class="product__price">
+                <div class="product__price-icon">
+                  <img src="./media/price.svg" alt="">
+                </div>
+                <p class="product__price-new">
+                  450 ₽/КГ
+                </p>
+                <p class="product__price-old">
+                  1290  ₽/КГ
+                </p>
+              </div>
+              <div class="product__buttons">
+                <button type="button" class="btn btn-red express_order">
+                  <img src="./media/finger-print.svg" alt="">
+                  <span>Купить в 1 клик</span>
+                </button>
+                <button type="button" class="btn add_to_cart">
+                  <img src="./media/cart-item.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a class="product__image" href="!#">
+              <img src="./media/catalog__item-image.png" alt="">
+            </a>
+            <div class="product__info">
+              <a class="product__title" href="!#">
+                Раки Самые Мелкие
+                <span class="product__title-weight">
+                  (15-20 Гр.)
+                </span>
+              </a>
+              <div class="product__attrs">
+                <div class="product__attrs-item">
+                  <div class="product__attrs-image">
+                    <img src="./media/crayfish.svg" alt="">
+                  </div>
+                  <p class="product__attrs-text">
+                    40-50 шт/1 кг
+                  </p>
+                </div>
+              </div>
+              <div class="product__price">
+                <div class="product__price-icon">
+                  <img src="./media/price.svg" alt="">
+                </div>
+                <p class="product__price-new">
+                  450 ₽/КГ
+                </p>
+                <p class="product__price-old">
+                  1290  ₽/КГ
+                </p>
+              </div>
+              <div class="product__buttons">
+                <button type="button" class="btn btn-red express_order">
+                  <img src="./media/finger-print.svg" alt="">
+                  <span>Купить в 1 клик</span>
+                </button>
+                <button type="button" class="btn add_to_cart">
+                  <img src="./media/cart-item.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a class="product__image" href="!#">
+              <img src="./media/catalog__item-image.png" alt="">
+            </a>
+            <div class="product__info">
+              <a class="product__title" href="!#">
+                Раки Самые Мелкие
+                <span class="product__title-weight">
+                  (15-20 Гр.)
+                </span>
+              </a>
+              <div class="product__attrs">
+                <div class="product__attrs-item">
+                  <div class="product__attrs-image">
+                    <img src="./media/crayfish.svg" alt="">
+                  </div>
+                  <p class="product__attrs-text">
+                    40-50 шт/1 кг
+                  </p>
+                </div>
+              </div>
+              <div class="product__price">
+                <div class="product__price-icon">
+                  <img src="./media/price.svg" alt="">
+                </div>
+                <p class="product__price-new">
+                  450 ₽/КГ
+                </p>
+                <p class="product__price-old">
+                  1290  ₽/КГ
+                </p>
+              </div>
+              <div class="product__buttons">
+                <button type="button" class="btn btn-red express_order">
+                  <img src="./media/finger-print.svg" alt="">
+                  <span>Купить в 1 клик</span>
+                </button>
+                <button type="button" class="btn add_to_cart">
+                  <img src="./media/cart-item.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sales">
+    <div class="section-wrapper">
+      <div class="container">
+        <h2 class="title">
+          <span>Скидки и подарки</span> клиентам
+        </h2>
+        <div class="sales__wrapper">
+          <div class="sales__item">
+            <div class="sales__item-inner">
+              <div class="sales__item-image">
+                <img src="./media/gift-01.png" alt="">
+              </div>
+              <h3 class="sales__item-title">
+                Уже заказали у нас?
+              </h3>
+              <p class="sales__item-text">
+                Скидка на доставку
+              </p>
+            </div>
+          </div>
+          <div class="sales__item">
+            <div class="sales__item-inner">
+              <div class="sales__item-image">
+                <img src="./media/gift-02.png" alt="">
+              </div>
+              <h3 class="sales__item-title">
+                Скидки!
+              </h3>
+              <p class="sales__item-text">
+                Скидка 5% при заказе раков от 5 кг
+              </p>
+            </div>
+          </div>
+          <div class="sales__item">
+            <div class="sales__item-inner">
+              <div class="sales__item-image">
+                <img src="./media/gift-03.png" alt="">
+              </div>
+              <h3 class="sales__item-title">
+                Подарки
+              </h3>
+              <p class="sales__item-text">
+                Подарки на Ваш день рождение - 1 кг раков
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="company">
+    <div class="container">
+      <div class="company__wrapper">
+        <div class="sliders" data-slider_wrapper>
+          <div class="slider-main">
+            <div class="slider-main_inner">
+              <div class="slider-main_item">
+                <img src="./media/main-slider-01.png" alt="" data-src="./media/main-slider-01.png" data-fancybox="company_photos">
+              </div>
+              <div class="slider-main_item">
+                <img src="./media/main-slider-01.png" alt="" data-src="./media/main-slider-01.png" data-fancybox="company_photos">
+              </div>
+              <div class="slider-main_item">
+                <img src="./media/main-slider-01.png" alt="" data-src="./media/main-slider-01.png" data-fancybox="company_photos">
+              </div>
+              <div class="slider-main_item">
+                <img src="./media/main-slider-01.png" alt="" data-src="./media/main-slider-01.png" data-fancybox="company_photos">
+              </div>
+              <div class="slider-main_item">
+                <img src="./media/main-slider-01.png" alt="" data-src="./media/main-slider-01.png" data-fancybox="company_photos">
+              </div>
+            </div>
+            <div class="arrow arrow-left"></div>
+            <div class="arrow arrow-right"></div>
+          </div>
+          <div class="slider-secondary">
+            <div class="slider-secondary_inner">
+              <img src="./media/main-slider-01.png" alt="">
+            </div>
+            <div class="slider-secondary_inner">
+              <img src="./media/main-slider-01.png" alt="">
+            </div>
+            <div class="slider-secondary_inner">
+              <img src="./media/main-slider-01.png" alt="">
+            </div>
+            <div class="slider-secondary_inner">
+              <img src="./media/main-slider-01.png" alt="">
+            </div>
+            <div class="slider-secondary_inner">
+              <img src="./media/main-slider-01.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="company__content">
+          <h2 class="title">
+            О компании
+          </h2>
+          <h3 class="subtitle">
+            RakiGastrobar
+          </h3>
+          <div class="company__content-text">
+            <div class="company__content-text_inner">
+              Компания «РакиТаки» - обслуживаем розничных и оптовых клиентов, а также обеспечиваем доставку свежих вареных и сырых раков, а также уникальных букетов из раков по умеренным ценам.
+              <br><br>С годами база наших постоянных клиентов продолжает расти, поэтому, в дополнение сотрудничеству с нашим постоянным поставщиком по выращиванию раков, мы заключаем контракты с несколькими ведущими экофермами по выращиванию раков для удовлетворения потребностей в объеме. Это позволяет нам справляться с растущим спросом на раков высокого качества, а также дает возможность продавать раков в течение  длительного периода времени.
+              <br><br>РакиТаки – Мы Варим Раков Из Экологически Чистых Водоемов По Уникальным 
+
+              <br><br>С годами база наших постоянных клиентов продолжает расти, поэтому, в дополнение сотрудничеству с нашим постоянным поставщиком по выращиванию раков, мы заключаем контракты с несколькими ведущими экофермами по выращиванию раков для удовлетворения потребностей в объеме. Это позволяет нам справляться с растущим спросом на раков высокого качества, а также дает возможность продавать раков в течение  длительного периода времени.
+              <br><br>РакиТаки – Мы Варим Раков Из Экологически Чистых Водоемов По Уникальным 
+              <br><br>С годами база наших постоянных клиентов продолжает расти, поэтому, в дополнение сотрудничеству с нашим постоянным поставщиком по выращиванию раков, мы заключаем контракты с несколькими ведущими экофермами по выращиванию раков для удовлетворения потребностей в объеме. Это позволяет нам справляться с растущим спросом на раков высокого качества, а также дает возможность продавать раков в течение  длительного периода времени.
+              <br><br>РакиТаки – Мы Варим Раков Из Экологически Чистых Водоемов По Уникальным 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="reviews">
+    <div class="container">
+      <h2 class="title">
+        <span>Отзывы</span> клиентов
+      </h2>
+      <div class="reviews__slider" data-slider_wrapper>
+        <div class="reviews__slider-inner">
+          <div class="reviews__slider-item">
+            <img src="./media/main-slider-01.png" alt="" data-src="./media/main-slider-01.png" data-fancybox="reviews_photo">
+          </div>
+          <div class="reviews__slider-item">
+            <img src="./media/main-slider-01.png" alt="" data-src="./media/main-slider-01.png" data-fancybox="reviews_photo">
+          </div>
+          <div class="reviews__slider-item">
+            <img src="./media/main-slider-01.png" alt="" data-src="./media/main-slider-01.png" data-fancybox="reviews_photo">
+          </div>
+          <div class="reviews__slider-item">
+            <img src="./media/main-slider-01.png" alt="" data-src="./media/main-slider-01.png" data-fancybox="reviews_photo">
+          </div>
+          <div class="reviews__slider-item">
+            <img src="./media/main-slider-01.png" alt="" data-src="./media/main-slider-01.png" data-fancybox="reviews_photo">
+          </div>
+        </div>
+        <div class="arrow arrow-left"></div>
+        <div class="arrow arrow-right"></div>
+      </div>
+    </div>
+  </section>
+  <section id="videos">
+    <div class="container">
+      <h2 class="title">
+        <span>Видео</span> раков
+      </h2>
+    </div>
+    <div class="videos__slider" data-slider_wrapper>
+      <div class="videos__slider-inner">
+        <div class="videos__slider-item">
+          <div class="play" data-src="https://www.youtube.com/embed/_EyZUTDAH0U" data-type="iframe" data-width="920" data-fancybox="video_gallery"></div>
+        </div>
+        <div class="videos__slider-item">
+          <div class="play" data-src="https://www.youtube.com/embed/_EyZUTDAH0U" data-type="iframe" data-width="920" data-fancybox="video_gallery"></div>
+        </div>
+        <div class="videos__slider-item">
+          <div class="play" data-src="https://www.youtube.com/embed/_EyZUTDAH0U" data-type="iframe" data-width="920" data-fancybox="video_gallery"></div>
+        </div>
+        <div class="videos__slider-item">
+          <div class="play" data-src="https://www.youtube.com/embed/_EyZUTDAH0U" data-type="iframe" data-width="920" data-fancybox="video_gallery"></div>
+        </div>
+        <div class="videos__slider-item">
+          <div class="play" data-src="https://www.youtube.com/embed/_EyZUTDAH0U" data-type="iframe" data-width="920" data-fancybox="video_gallery"></div>
+        </div>
+      </div>
+      <div class="arrow arrow-left"></div>
+      <div class="arrow arrow-right"></div>
+      </div>
+    </div>
+  </section>
+  <section id="photos">
+    <div class="container">
+      <h2 class="title">
+        <span>Фото</span> раков
+      </h2>
+      <p class="addon_title">
+        Живые и вареные
+      </p>
+      <div class="photos__slider" data-slider_wrapper>
+        <div class="photos__slider-inner">
+          <div class="photos__slider-item">
+            <img src="./media/photos.png" alt="" data-src="./media/photos.png" data-fancybox="photos_slider">
+          </div>
+          <div class="photos__slider-item">
+            <img src="./media/photos.png" alt="" data-src="./media/photos.png" data-fancybox="photos_slider">
+          </div>
+          <div class="photos__slider-item">
+            <img src="./media/photos.png" alt="" data-src="./media/photos.png" data-fancybox="photos_slider">
+          </div>
+          <div class="photos__slider-item">
+            <img src="./media/photos.png" alt="" data-src="./media/photos.png" data-fancybox="photos_slider">
+          </div>
+          <div class="photos__slider-item">
+            <img src="./media/photos.png" alt="" data-src="./media/photos.png" data-fancybox="photos_slider">
+          </div>
+        </div>
+        <div class="arrow arrow-left"></div>
+        <div class="arrow arrow-right"></div>
+      </div>
+    </div>
+  </section>
+  <section id="faq">
+    <div class="section-wrapper">
+      <div class="container">
+        <h2 class="title">
+          Частые вопросы <span>про раков</span>
+        </h2>
+        <div class="faq__content">
+          <div class="faq__content-item">
+            <div class="faq__content-question">
+              <p>Почему раки краснеют?</p>
+              <div class="arrow"></div>
+            </div>
+            <div class="faq__content-answer">
+              <p>
+                Вкус рака, на самом деле, не так сильно зависит от его размера, как может показаться. Гораздо больше на это влияет правильность приготовления блюда, длительность варки, использование дополнительных ингредиентов и, разумеется, свежесть. Мы не устаем напоминать, что лучше всего использовать для готовки живых раков , потому что один-единственный испорченный рак, оказавшись в кастрюле, не только сведет на нет все ваши кулинарные порывы, но и может вызвать тяжелейшее отравление. Только свежие и сочные раки вы можете заказать в RakiTaki.
+              </p>
+            </div>
+          </div>
+          <div class="faq__content-item">
+            <div class="faq__content-question">
+              <p>Как есть раков?</p>
+              <div class="arrow"></div>
+            </div>
+            <div class="faq__content-answer">
+              <p>
+                Вкус рака, на самом деле, не так сильно зависит от его размера, как может показаться. Гораздо больше на это влияет правильность приготовления блюда, длительность варки, использование дополнительных ингредиентов и, разумеется, свежесть. Мы не устаем напоминать, что лучше всего использовать для готовки живых раков , потому что один-единственный испорченный рак, оказавшись в кастрюле, не только сведет на нет все ваши кулинарные порывы, но и может вызвать тяжелейшее отравление. Только свежие и сочные раки вы можете заказать в RakiTaki.
+              </p>
+            </div>
+          </div>
+          <div class="faq__content-item">
+            <div class="faq__content-question">
+              <p>Сколько варить раков по времени?</p>
+              <div class="arrow"></div>
+            </div>
+            <div class="faq__content-answer">
+              <p>
+                Вкус рака, на самом деле, не так сильно зависит от его размера, как может показаться. Гораздо больше на это влияет правильность приготовления блюда, длительность варки, использование дополнительных ингредиентов и, разумеется, свежесть. Мы не устаем напоминать, что лучше всего использовать для готовки живых раков , потому что один-единственный испорченный рак, оказавшись в кастрюле, не только сведет на нет все ваши кулинарные порывы, но и может вызвать тяжелейшее отравление. Только свежие и сочные раки вы можете заказать в RakiTaki.
+              </p>
+            </div>
+          </div>
+          <div class="faq__content-item">
+            <div class="faq__content-question">
+              <p>Влияет ли размер рака на их вкус?</p>
+              <div class="arrow"></div>
+            </div>
+            <div class="faq__content-answer">
+              <p>
+                Вкус рака, на самом деле, не так сильно зависит от его размера, как может показаться. Гораздо больше на это влияет правильность приготовления блюда, длительность варки, использование дополнительных ингредиентов и, разумеется, свежесть. Мы не устаем напоминать, что лучше всего использовать для готовки живых раков , потому что один-единственный испорченный рак, оказавшись в кастрюле, не только сведет на нет все ваши кулинарные порывы, но и может вызвать тяжелейшее отравление. Только свежие и сочные раки вы можете заказать в RakiTaki.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="shipping">
+    <div class="section-wrapper">
+      <div class="container">
+        <div class="shipping__head">
+          <h2 class="title">
+            Доставка и оплата
+          </h2>
+          <button type="button" class="btn btn-border btn-red" data-open_popup="callback">
+            Заказать
+          </button>
+        </div>
+        <div class="shipping__content">
+          <div class="shipping__item">
+            <div class="shipping__item-inner">
+              <p class="shipping__num">
+                01
+              </p>
+              <p class="shipping__text">
+                Доставка внутри МКАД:
+                <br>от 350 руб
+              </p>
+            </div>
+          </div>
+          <div class="shipping__item">
+            <div class="shipping__item-inner">
+              <p class="shipping__num">
+                02
+              </p>
+              <p class="shipping__text">
+                Доставка за МКАД рассчитывается индивидуально
+              </p>
+            </div>
+          </div>
+          <div class="shipping__item">
+            <div class="shipping__item-inner">
+              <p class="shipping__num">
+                03
+              </p>
+              <p class="shipping__text">
+                Оплата при получении
+                <br>Возможен: наличный и безналичный расчёт
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="seo">
+    <div class="container">
+      <div class="seo__content">
+        <div>
+          <p>
+            До сих пор не пробовали вареных раков с доставкой по Москве, приготовленных по проверенным рецептам? А вы знали, что они подходят как любителям качественных морепродуктов, так и ценятся противниками, а ведь их иногда путают с морепродуктами. Сами по себе этот деликатес обладает очень мягким натуральным вкусом, поскольку более мясистый, чем крабы, и не такой жесткий, как креветки, но описываются как сочетание того и другого. Слегка соленые, немного сладкие, они могут иметь минеральный оттенок, но при этом быть непохожим на все, что вы ели до этого. 
+          </p>
+          <hr>
+          <strong>
+            Почему доставка живых раков недорого пользуется таким спросом?
+          </strong>
+          <p>
+            Их традиционно варят целиком в острой каджунской приправе, а также с укропом и другими специями, а после подают с кукурузой и картофелем. Хотя опытный гурман все еще может различать ароматы в различных частях, приправа усиливает пикантность вареных раков, купить которые с доставкой можно прямо сейчас. Это верно в отношении традиционных отваров, а также супов, соусов и других различных блюд. 
+          </p>
+          <p>
+            Чрезвычайная вариативность и естественная мягкость делают раки вареные, купить которые можно у нас по низким ценам, изысканной пищей как для любителей морепродуктов, так и для скептиков. Раки на самом деле содержат мало жиров и трансжиров. Например, в 100 граммах их мяса содержится 116 миллиграммов холестерина, что составляет около трети максимальной суточной нормы, рекомендованной диетологами 2021 и представителями кардиологической ассоциации. 
+          </p>
+          <p>
+            Жир из раков живых, купить которые можно у нас в два клика, в основном ненасыщенный и содержит высокую долю омега-3 кислот, что значительно снижают риск сердечных заболеваний и инсульта. Однако, наслаждаясь вареными раками или живыми (купить в Москве можно у нас), не забудьте перекусить закусками из свежих овощей и дополнить трапезу фруктами на десерт. Фрукты и овощи богаты калием и помогают снизить влияние соли на кровяное давление и снижают риск образования камней в почках. 
+          </p>
+          <p>
+            Хотите найти источник высококачественного белка с низким содержанием калорий, жиров и насыщенных жиров? Они также являются хорошим источником витамина B12, ниацина, железа, меди и селена, поэтому поспешите купить в Москве с доставкой раки живые или вареные по классическим рецептам от РакиТаки.
+          </p>
+          <img src="./media/seo-01.png" alt="">
+        </div>
+        <div>
+          <strong>
+            Почему доставка живых раков недорого пользуется таким спросом?
+          </strong>
+          <img src="./media/seo-02.png" alt="">
+          <p>
+            Раки используются в огромном числе блюд, потому что их вкус очень разнообразен, но в конечном итоге будет зависеть от того, какие части вы едите, как они готовятся, и какая приправа используется. 
+          </p>
+          <ul>
+            <li>
+              Клешни, ноги и хвосты нередко объединяются в одну группу, поскольку все они содержат много мяса. Это также самая желанная доля ракообразных, обладающая полезными качествами, в чем вы и сможете убедиться, заказав доставку вареных раков в РакиТаки. 
+            </li>
+            <li>
+              Клешни очень мягкие и слегка сладкие. Мясо похоже на клешню омара – очень гладкое и совсем не вязкое. Их лучше всего готовить на пару и кипятить, чтобы сохранить нежный натуральный аромат. 
+            </li>
+            <li>
+              Хвосты похожи на клешни, но иногда они более жесткие и волокнистые. Для приготовления хвостов используются различные методы, благодаря которым сохраняется текстура. 
+            </li>
+            <li>
+              В ногах очень мало мяса. На самом деле, они очень редко включаются в меню как отдельные продукты, но многие любят высасывать содержимое из каждой ножки, когда едят целых особей, особенно после покупки вареных раков с доставкой от РакиТаки. 
+            </li>
+            <li>
+              Как и у многих ракообразных, у них внутри тела зеленая масса, называемая пищеварительной железой животного, похожей на печень или поджелудочную и описывается гурманами как обладающий очень сильной, концентрированной смачностью – сочетанием соленого и сладкого. Его добавляют в соусы или супы для придания аромата, но ее также можно есть отдельно. 
+            </li>
+            <li>
+              Икра имеет не очень соленый или насыщенный смак, но вместо этого в ней чувствуются тонкие нотки морской воды. Однако если икра внутри, которую вы едите, все еще черная, это означает, что она не была тщательно приготовлена. Икра должна стать ярко-красной, когда она будет готова к употреблению. 
+            </li>
+            <li>
+              Есть панцирь отдельно не рекомендуется, добавление его в бульон, супы и соусы – оригинальный способ придать вашей кулинарии ту самую изюминку. Только не забудьте вынуть панцирь перед подачей на стол!
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="section-wrapper">
+      <div class="container">
+        <div class="contact__map">
+          <iframe src="https://yandex.ru/map-widget/v1/-/CCUyUZX1KB" frameborder="0"></iframe>
+        </div>
+        <div class="offer_form">
+          <p class="offer_form-title subtitle">
+            Оставьте заявку, мы свяжемся с Вами через 1  минуту
+          </p>
+          <p class="offer_form-subtitle">
+            Подберем для Вас раков и быстро оформим заказ
+          </p>
+          <form class="offer_form-fields" action="!#" method="POST">
+            <div class="offer_form-choice">
+              <input id="product_type_01_" type="radio" name="product_type" checked>
+              <label class="offer_form-choice__item contact" for="product_type_01_">
+                <div class="offer_form-choice__icon">
+                  <img src="./media/live-crayfish.png" alt="">
+                </div>
+                <p>
+                  Живые
+                </p>
+                <span class="tick"><img src="./media/tick.svg" alt=""></span>
+              </label>
+              <input id="product_type_02_" type="radio" name="product_type">
+              <label class="offer_form-choice__item contact" for="product_type_02_">
+                <div class="offer_form-choice__icon">
+                  <img src="./media/boiled-crayfish.png" alt="">
+                </div>
+                <p>
+                  Вареные
+                </p>
+                <span class="tick"><img src="./media/tick.svg" alt=""></span>
+              </label>
+            </div>
+            <div class="offer_form-inputs">
+              <input type="text" name="name" class="input" placeholder="Имя">
+              <input type="text" name="phone" class="input" placeholder="Телефон">
+            </div>
+            <button class="btn btn-red btn-border">
+              Экспресс заказ
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="footer__top container">
+      <nav class="footer__menu">
+        <ul>
+          <li class="footer__menu-item">
+            <a href="./#sales">
+              Акции
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="./#photos">
+              Галерея
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="./#alive">
+              Раки живые
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="./#boiled">
+              Раки вареные
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="./#company">
+              О компании
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="./#faq">
+              FAQ
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="./#shipping">
+              Оплата и доставка
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <hr class="footer__menu-line">
+      <div class="footer__menu-side">
+        <div class="footer__menu-shipping">
+          <p class="footer__menu-shipping__title">
+            Самовывоз:
+          </p>
+          <p class="footer__menu-shipping__content">
+            <img src="./media/shipping-info.svg" alt="">
+            М. Дубровка
+          </p>
+        </div>
+        <div class="footer__menu-social">
+          <a class="footer__menu-social__item" href="!#">
+            <img src="./media/telegram.svg" alt="">
+          </a>
+          <a class="footer__menu-social__item" href="!#">
+            <img src="./media/whatsapp.svg" alt="">
+          </a>
+          <a class="footer__menu-social__item" href="!#">
+            <img src="./media/viber.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <a class="footer__bottom-logo" href="/">
+        <img src="./media/logo.png" alt="">
+      </a>
+      <p class="footer__bottom-copyright">
+        Все права защищены © 2021
+      </p>
+      <div class="footer__bottom-buttons">
+        <a href="tel:+74958774942" class="footer__bottom-phone">
+          +7 (495) 877-49-42
+        </a>
+        <button type="button" class="footer__bottom-callback" data-open_popup="callback">
+          Заказать звонок
+        </button>
+      </div>
+    </div>
+  </footer>
+  <div class="popup" id="callback">
+    <div class="popup__bg close"></div>
+    <div class="popup__container">
+      <div class="popup__header">
+        <p class="subtitle">
+          Перезвоните мне
+        </p>
+        <button type="button" class="close popup__close x"></button>
+        <p class="popup__info">
+          Оставьте ваши контактные данные, и мы с Вами свяжемся в ближайшее время
+        </p>
+      </div>
+      <div class="popup__body">
+        <form action="!#" method="POST">
+          <input class="input" type="text" placeholder="Имя" name="name">
+          <input class="input" type="tel" placeholder="Телефон" name="phone">
+          <label class="checkbox_comfirm">
+            <input type="checkbox" required checked>
+            <div class="square"></div>
+            <p class="text">
+              Я прочитал(-а) <a href="!#">Пользовательское соглашение</a> и согласен(-на) с условиями
+            </p>
+          </label>
+          <button class="btn btn-border btn-red">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="popup" id="thanks">
+    <div class="popup__bg close"></div>
+    <div class="popup__container">
+      <div class="popup__header">
+        <button type="button" class="close popup__close x"></button>
+      </div>
+      <div class="popup__body">
+        <p class="subtitle">
+          Спасибо! 
+        </p>
+        <p class="subtitle_info">
+          Ваша заявка оптравлена, мы
+          <br>свяжемся с Вами в ближайшее время.
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/jquery-3.6.0.min.js"></script>
+  <script src="./assets/libs/jquery.fancybox.min.js"></script>
+  <script src="./assets/libs/slick.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
